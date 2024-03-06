@@ -6,3 +6,14 @@
 * {
     margin: 0;
 }
+
+.blue-decoration {
+    background-color: #0891B2;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    transform: skewY(-.2rad);
+    top: -200px;
+    z-index: -2;
+
+}
