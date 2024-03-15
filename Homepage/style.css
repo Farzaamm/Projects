@@ -3,8 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-* {
+body {
+    position: relative;
+    min-height: 100vh;
     margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
 }
 
 .blue-decoration {
@@ -12,8 +19,74 @@
     width: 100%;
     height: 500px;
     position: absolute;
-    transform: skewY(-.2rad);
-    top: -200px;
+    transform: skewY(-.15rad);
+    top: -250px;
     z-index: -2;
+    box-shadow: 0px 0px 15px 0px;
 
 }
+
+.profile-container {
+    margin: 100px 100px 50px 100px;
+    max-width: 70vw;
+    min-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 6px -2px rgb(103, 100, 100);
+}
+
+.profile-container > p {
+    padding: 10px;
+    margin: 0;
+    padding-top: 0;
+    min-height: 350px;
+}
+
+.profile-img {
+    max-width: 300px;
+    transform: translateX(-25px) scale(1.15);
+    box-shadow: 5px 5px 6px -2px rgb(103, 100, 100);
+}
+
+.profile-img-container {
+    grid-row: span 3;
+}
+
+.name {
+    color: white;
+    position: relative;
+    top: -25px;
+    left: -25px;
+    font-family: Playfair, roboto;
+    font-size: 2.3rem;
+    height: 0;
+    margin: -1px;
+
+}
+
+.about-me {
+    padding: 10px 10px 0px 10px;
+}
+
+
+
+main {
+    border: 3px blue solid;
+}
+
+/* .projects {
+    min-height: 50vh;
+    width: 100vw;
+    position: absolute;
+    top: 60vh;
+    background-color: antiquewhite;
+} */
+
+/* footer {
+    min-height: 200px;
+    width: 100vw;
+    background-color: #0891B2;
+    position: absolute;
+    bottom: 0;
+} */
